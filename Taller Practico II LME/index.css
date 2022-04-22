@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.contenedor{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: darkorange;
+}
+
+.letracel{
+    display: none;
+}
+
+header{
+    width: 100%;
+    padding: 1em 1em;
+
+    padding: 0.5px 10px;
+    background-color: dimgray;
+     /*flex*/
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.logo img{
+    position: relative;
+    width: 75px;
+    height: 75px;
+    padding: 1vw 1vw;
+    cursor: pointer;
+    align-self: center;
+    transition: all 800ms ease-out;
+    
+}
+
+header nav{
+    width: 90%;
+    
+    /*flex*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+header nav a{
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.50px 0.50px;
+    
+    /*flex*/
+
+    flex: 1 1;
+    flex-wrap: wrap;
+}
+
+.imgs{
+    display: inline-flex;
+}
+
+.imgs .info{
+    width: 350px;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.imgs .info img{
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin: 0px auto;
+    padding: 1em
+}
+
+.imgs .info .titulo{
+    text-align: center;
+    font-weight: bold;
+    color: ghostwhite;
+    font-size: 25px;
+}
+
+.imgs .info p{
+    text-align: justify;
+    color: ghostwhite;
+    font-size: 18px;
+}
+
+.estu{
+    margin: auto;
+    margin-top: 50px;
+}
+.estu p{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.estu table{
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+.estu table .enca{
+    background-color: coral;
+}
+
+.estu table td{
+    width: 150px;
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+}
+
+.galardones{
+    color: white;
+    font-size: 18px;
+}
+
+.galardones p{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+footer{
+    width: 100%;
+    background-color: orange;
+    color: white;
+    text-align: center;
+}
+
+footer p{
+    padding: 2em;
+}
+
+/*-------------------------QUERYS-----------------------*/
+
+@media screen and (max-width: 400px){
+.logo img{
+    display: none;
+    
+}
+
+.letracel{
+    display: inline-flex;
+    color: red;
+    font-size: 25px;
+    padding: 15px;
+    text-align: center;
+    width: 100%
+}
+
+.imgs{
+    display: inline;
+}
+
+.imgs .info{
+    width: 350px;
+    margin-left: 15px;
+    margin-top: 40px;
+}
+
+header nav{
+    width: 100%;
+    
+}
+
+.estu table td{
+    width: 80px;
+}
+
+.estu table{
+    padding: 15px;
+}
+
+
+.galardones{
+    color: white;
+    font-size: 18px;
+    margin: 25px;
+}
+
+}
